@@ -1,0 +1,54 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=1125
+
+  PURPOSE:
+		To provide vim scripts with a simple unit testing framework and tools.
+		The framework and tools should resemble JUnit's interface definitions
+		to ease usage of both frameworks (and others based on JUnit). 
+		Obviously vim scripts are not java so I will only try to implement the
+		stuff useful to vim scripts. As a first milestone I think the 
+		junit.Assert and junit.TestResult classes to get a vim-script
+		unit-testing environment going.
+		
+  WHY:
+ 		Well, I have been working on some vim-scripts and read a lot of them
+ 		the last two weeks and I really, really miss my unit-test (and
+ 		mock-object, but that is fare fetched I think..:O) tools to get my own
+ 		stuff of the ground (and making modifications to your's).
+ 		
+  THOUGHTS:
+		Writing unit-test code against a UI environment is often very difficult 
+		or demanding to creative solutions to be productive. We would like to 
+		have a mock-object framework to go with the unit-testing framework.
+		
+  INSTALLATION:
+  		Place this file in your plugin directory (~/.vim/ftplugin/)
+  		When you start vim again and open a vim file for editing you should
+  		get a message that vimUnit has installed its documentation.
+  		To get you started you could try :h vimUnit or :h VUAutoRun
+  		
+  TIPS:
+  		Documentation (when written..:o) is found at the bottom of this file. 
+  		Thanks to code from vimspell.vim it should be self-installing the first
+  		time this module is loaded
+
+  		If your new to test-first principles and thinking you should start
+  		with the article: 
+  			http://junit.sourceforge.net/doc/testinfected/testing.htm
+  		And then surf the web on these locations:
+  			http://www.junit.org/
+  			http://xprogramming.com/
+  			http://www.extremeprogramming.org/
+ 
+  NOTE:
+		8 Nov 2004 (v 0.1) This is my initial upload. The module is fare 
+		from finished. But as I could do with some input from other vim users
+		So I have chosen to let people know I'm working on it. 
+
+		To be conform with vim-script naming conventions functions are
+		prepended with VU (VimUnit). So stuff you would normaly would call 
+		VUAssert are called VUAssert, TestRunner* are called VURunner and so on.
+		Global variables starts with vimUnit*
+		
+
+  Best Regards
+  Staale Flock,  (staale -- lexholm .. no)
